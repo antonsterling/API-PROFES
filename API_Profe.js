@@ -5,10 +5,12 @@ const { logErrors, errorHandler, boomErrorHandler } = require("./middleware/erro
 const cors = require("cors")
 
 const app = express(); // Creamos una aplicacion de express
-const port = 3000; //Puerto donde queremos que corra
+const port = process.env.PORT || 3000; //Puerto donde queremos que corra
 
 app.use(express.json()) // Es un middleware que nos permitira obtener los datos mandados por post en el body
-const origenesPermitidos = ['http://localhost:8080', 'http://localhost:5500', 'http://127.0.0.1:5500']
+
+//De esta forma logramos que se pueda obtener los datos solo desde algunos lugares
+/* const origenesPermitidos = ['http://localhost:8080', 'http://localhost:5500', 'http://127.0.0.1:5500']
 
 const opciones = {
   origin: (origin, callback) => {
@@ -19,8 +21,8 @@ const opciones = {
     }
   }
 }
-app.use(cors(opciones))
-// app.use(cors()) //De esta manera habilitamos a cualquier dominio para acceder a nuestra informacion, esto se hace con APIS Publicas
+app.use(cors(opciones)) */
+app.use(cors()) //De esta manera habilitamos a cualquier dominio para acceder a nuestra informacion, esto se hace con APIS Publicas
 
 
 routerAPI(app)
