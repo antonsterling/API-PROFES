@@ -1,0 +1,27 @@
+{
+  "name": "expres-js",
+  "version": "1.0.0",
+  "main": "API_Profe.js",
+  "scripts": {
+    "dev": "nodemon API_Profe.js",
+    "start": "node API_Profe.js",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "joi": "^17.13.1"
+  }
+}
