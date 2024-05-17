@@ -1,10 +1,10 @@
 {
   "name": "expres-js",
   "version": "1.0.0",
-  "main": "API_Profe.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon API_Profe.js",
-    "start": "node API_Profe.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "lint": "eslint"
   },
   "keywords": [],
