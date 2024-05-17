@@ -28,7 +28,7 @@ app.use(cors()) //De esta manera habilitamos a cualquier dominio para acceder a 
 routerAPI(app)
 
 // De esta forma creamos rutas, para poder verla en el navegador
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send("Hola mi server en express");
 })
 

@@ -4,7 +4,7 @@ const profesRouter = require("./profes.routes")
 
 function routerApi(app){
   const router = express.Router()
-  app.use("/v1", router)
+  app.use("/api/v1", router)
   router.use('/profes', profesRouter)
   //router.use('/estudiantes', estudiantesRouter)
 }
